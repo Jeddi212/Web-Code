@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Test Form CSS</title>
+	<style>
+		input#button{
+			margin-left:80%;
+			margin-right:5px;
+			border-radius: 5px;
+			background-color: black;
+			color: #fff;
+		}
+		input#button.hover{
+			background-color: #15273c;
+		}
+		fieldset{
+			border: 2px solid #f0f2e2;
+			border-radius:14px;
+			width: 30%;
+		}
+		legend{
+			border: 1px solid grey;
+			border-radius:4px;
+			background-color: #eee;
+		}
+		input#nama, input#email{
+			width: 80%;
+			border-style: none;
+			border-bottom-style: solid;
+		}
+		input:focus{
+			background-color: #fdcabe;
+		}
+	</style>
+</head>
+
+<body>
+
+<fieldset>
+	<legend>NEWSLETTER</legend>
+		<form>
+			<caption for="nama">Name:</caption>
+			<input type="text" id="nama" focused>
+			<br>
+			<br>
+			
+			<caption for"email">Email:</caption>
+			<input type="text" id="email">
+			<br>
+			<br>
+			
+			<input type="button" value="Subscribe" id="button">
+		</form>
+</fieldset>
+
+</body>
+
+</html>

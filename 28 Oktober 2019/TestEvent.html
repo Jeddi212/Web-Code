@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "Jedediah Fanuel">
+	<title>Test Event</title>
+
+</head>
+
+<body>
+
+<h2 id = "demo" onmouseover = "mouseOver()" onmouseout = "mouseOut()">Mouse Over Me</h2>
+
+<form id="MyForm" onreset="MyAlertFuntion()">
+	<input type="text" onkeydown="myFunction()">
+	<input type="text" id="fname" onkeyup="myFunction1()">
+	<input type="button" onclick="myResetFunction()" value="Reset Form">
+</form>
+
+<script>
+function MyAlertFuntion(){
+	alert("Hayuuuu!");
+}
+function myResetFunction(){
+	document.getElementById("MyForm").reset();
+}
+function mouseOut(){
+	document.getElementById("demo").style.color="blue";
+}
+
+function mouseOver(){
+	document.getElementById("demo").style.color="red";
+}
+
+function myFunction(){
+	alert("Wakanda Forever!");
+}
+
+function myFunction1(){
+	var cinta = document.getElementById("fname");
+	cinta.value = cinta.value.toUpperCase();
+}
+
+
+</script>
+
+</body>
+
+</html>

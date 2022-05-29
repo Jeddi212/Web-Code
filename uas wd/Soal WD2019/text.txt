@@ -1,0 +1,46 @@
+
+Japanese Vegetarian
+Five week course in London
+
+A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.
+
+
+Sauces Masterclass
+One day workshop
+
+An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.
+
+opular Recipes
+Yakitori (grilled chicken)
+Tsukune (minced chicken patties)
+Okonomiyaki (savory pancakes)
+Mizutaki (chicken stew)
+Contact
+
+Yoko's Kitchen
+27 Redchurch Street
+Shoreditch
+London E2 7DP
+
+========
+fontfamily ; Georgia, Times, serif;
+
+
+
+footer //background-color; #aeaca8;
+hover #eeeeee or efefef
+
+font color ;#666666, #de6581
+
+============
+
+var variableName = new Date();
+var variableName = new Date(milliseconds);
+var variableName = new Date(dateString);
+var variableName = new Date(year, month, day, hours, minutes,
+                              seconds, milliseconds);
+
+setInterval(var, 1000)->  Display Timer In Every 1 Sec
+
+
+				

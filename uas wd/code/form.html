@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tanggal</title>
+</head>
+</body>
+	<!--INPUT-->
+	<input type="text" id="month" name="month" placeholder="Month">
+	<input type="text" id="day" name="day" placeholder="Day">
+	<input type="text" id="year" name="year" placeholder="Year">
+	<input type="text" id="hour" name="hour" placeholder="Hour">
+	<input type="text" id="min" name="min" placeholder="Min">
+	
+	<!--TOMBOL-->
+	<button id="submit" onclick = "tombol()">Submit</button>
+	<br>
+	<br>
+	
+	<!--HASIL-->
+	<p id="hasil">
+		
+	</p>
+	
+	<!--SCRIPT-->
+	<script>
+	function tombol(){
+		 let bulan = document.getElementById("month").value;
+		 let hari = document.getElementById("day").value;
+		 let tahun = document.getElementById("year").value;
+		 let jam = document.getElementById("hour").value;
+		 let menit = document.getElementById("min").value;
+		 
+		 let x = new Date();
+		 let jam1 = x.getHours();
+		 let menit1 = x.getMinutes();
+		 let detik1 = x.getSeconds();
+		 
+		 
+		 document.getElementById("hasil").innerHTML = " Belom Beres Bu ";
+	}
+	</script>
+</body>
+</html>

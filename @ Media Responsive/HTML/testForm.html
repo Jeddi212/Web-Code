@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Form</title>
+		<meta charset="UTF-8">
+		<style>
+			label {
+					font : 1rem 'Fira Sans', sans-serif;
+			}
+			input {
+				margin: .1rem;
+			}
+		</style>
+	</head>
+<body>
+	<form action="index.html" method="post>
+		<label for="name" >Name (4 to 8 characters) : </label>
+		<input type="text" id="name" required minlength="4" maxlength="8" size="10" autofocus >
+		<br>
+		<input type="date"  id="date" value="2017-09-01">
+		<br>
+		<p>Choose your monster's color</p>
+		<input type="color" id="head" name="head" value="#5ad4cc" >
+		<label for="head">Head</label>
+		<input type="color" id="body" name="body" value="#f3d2a9">
+		<label for="body">Body</label>
+		<br><br>
+		<label for="email">Enter your e-mail</label>
+		<input type="email" id="email" size="40" required>
+		<br><br>
+		<label for="password">Enter your password</label>
+		<input type="password" name="password"  id="password" size="100">
+		<br><br>
+		<label for="profile_pic">Input your Profile Picture</label>
+		<input type="file" if="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png" multiple>
+		<br><br>
+		<label for="number">Input Your Number</label>
+		<input type="number" id="number" value="50" step="2">
+		<br><br>
+		
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+	</form>
+	
+	<form>
+	<p>Please select your prefered contact method</p>
+	<input type="radio" id="contactChoice1" name="contact" value="email" checked>
+	<label for="contactChoice1">Email</label>
+	<input type="radio" id="contactChoice2" name="contact" value="Phone">
+	<label for="contactChoice2">Phone<label>
+	
+	<p>Choose Your Monster's Feature :</p>
+	<input type="checkbox" id="scales" name="scales" checked>
+	<label for="scales">Scales</label>
+	<input type="checkbox" id="horns" name="horns">
+	<label for="horns">Horns</label>
+	</form>
+	
+	<form>
+	<label for="myBrowsers">Choose a browser.....</label>
+			<input list="browsers" id="myBrowsers" name="myBrowsers">
+			<datalist id="browsers">
+				<option value="Chrome">
+				<option value="Firefox">
+				<option value="Opera">
+				<option value="Safari">
+				<option value="Microsoft Edge">
+				<option value="Internet Explorer">
+				<option value="Bambank Browser">
+			</datalist>
+			<br><br>
+			<label for="pet-select">Choose a pet</label>
+			
+			<select id="pet-select">
+				<option value="">--Please choose an option</option>
+				<option value="Bambank">Bambank</option>
+				<option value="Junaedi">Junaedi</option>
+				<option value="Cecep">Cecep</option>
+				<option value="Udin">Udin</option>
+				<option value="Upin">Upin</option>
+				<option value="Ipin">Ipin</option>
+			</select>
+			
+			<br><br>
+			
+			<textarea name="textarea" 
+			rows="4" cols="80">Write something here...
+			</textarea>
+	</form>
+	
+</body>
+</html>

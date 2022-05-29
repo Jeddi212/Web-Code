@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "Jeddi">
+	<title>7 November 2019</title>
+</head>
+
+
+<body>
+	
+	<input type="button" onclick="No1()">Nomor 1</button>
+	<br><br>
+	
+	<input type="button" onclick="No2()">Nomor 2</button>
+	<br><br>
+	
+	<input type="button" onclick="No3()">Nomor 3</button>
+	<br><br>
+	
+	<input type="button" onclick="No4()">Nomor 4</button>
+	<br><br>
+	
+	<input type="button" onclick="No5()">Nomor 5</button>
+	<br><br>
+	
+	<script>
+	function No1(){
+		var text = window.prompt("Masukkan Teks", "JavaScript");
+		var potong = window.prompt("Masukan batas pemotongan", "2");
+		var panjang = text.length;
+		
+		var cek = text.substr(0,potong);
+		var cek2 = text.substr(panjang-potong,potong);
+		
+		document.write(cek, cek2);
+	}
+	
+	function No2(){
+		var x;
+		var CekText = window.prompt("Masukkan Teks untuk No 2", "");
+		
+		if(CekText == ""){
+			x="true";
+		} else {
+			x="false";
+		}
+		
+		document.write(x);
+	}
+	
+	function No3(){
+		var angka = window.prompt("Masukkan Jumlah Menit", "200");
+
+		var hour = parseInt(angka / 60);
+		var minut = angka % 60;
+		
+		document.write(angka + " minutes adalah = " + hour + " jam  " + minut + " menit");
+	}
+	
+	function No4(){
+		var text = window.prompt("Masukkan Email", "anda1415@gmail.com");
+		var at = text.search("@");
+		var cek = text.substring(at,8-3);
+		
+		var hide = text.replace(cek, "...");
+		
+		document.write(hide);
+	}
+	
+	function No5(){
+		var text = window.prompt("Masukkan Kata-Kata", "Sebelum menjadi kupu-kupu, harus dilaluinya dalam kepompong");
+		var cari = window.prompt("Masukkan Kata yang ingin dicari", "kupu");
+		var i = 0;
+		var hasil = 0;
+		
+		while(i < text.length){
+			if(cari == text.substr(i,cari.length)){
+				hasil += 1;
+				i = i + cari.length - 1;
+			}
+			i++;
+		}
+		
+		document.write("Jumlah kata yang dicari ada = " + hasil);
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Test Form CSS</title>
+	<style>
+		input{
+			background-repeat: no-repeat;
+			display: block;
+			margin-bottom: 5px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 25px;
+			border: 1px dashed #825822;
+			border-radius: 5px;
+			background-color: #f6a19f;
+			background-position: 5px 5px;
+		}
+		input:focus, input.hover{
+			background-color:#f9f6f0;
+			border: 1px dotted #4ac567;
+		}
+		input#email{
+			background-image: url(images/email.png);
+		}
+		input#twitter{
+			background-image: url(images/twitter.png);
+		}
+		input#web{
+			background-image: url(images/web.png);
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+		<input type="text" id="email" focused>
+		<input type="text" id="twitter">
+		<input type="text" id="web">
+		
+	</form>
+	
+</body>
+
+</html>

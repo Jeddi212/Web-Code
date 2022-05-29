@@ -1,0 +1,109 @@
+<DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "Jeddi">
+	<title>jQuery</title>
+	<style>
+	*{
+		background-color: lightblue;
+	}
+	p.a{
+		border: 1px solid red;
+		width: 10%;
+		float: left;
+	}
+	</style>
+	<script src = "jquery-3.4.1.js"></script>
+	<script type = "text/javascript">
+	// kalo manggil jquery nya di head, harus pake ready function, tapi kalo manggil jquery nya di body, ga usah pake ready function
+		$(document).ready(function(){
+			$("h1").css({"background-color": "yellow", "color": "blue"});
+			
+			$("button").click(function(){
+				$("p.stop").text("Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019 Jedediah Fanuel Kelas Informatika 2019");
+			});
+			
+			alert("Halo Bu Kent");
+			
+			//Hide
+			$(".hide").click(function(){
+				$("p.stop").hide("slow");
+			});
+			
+			//Show
+			$(".show").click(function(){
+				$("p.stop").show("slow");
+			});
+			
+			//Toggle
+			$(".tog").click(function(){
+				$("p.stop").toggle("slow");
+			})
+			
+			//fadeOUT
+			$(".OUT").click(function(){
+				$("p.stop").fadeOut("slow");
+			});
+			
+			//fadeIN
+			$(".IN").click(function(){
+				$("p.stop").fadeIn("slow");
+			});
+			
+			//Sldie Up
+			$(".UP").click(function(){
+				$("p.stop").slideUp("slow");
+			});
+			
+			//Slide Down
+			$(".DOWN").click(function(){
+				$("p.stop").slideDown("slow");
+			});
+			
+			//Stop
+			$(".stopz").click(function(){
+				$(".stop").stop("slow");
+			});
+		});
+	</script>
+	
+</head>
+<body>
+	
+	<h1>Hello World...</h1>
+	
+	
+	<button type="button">Replace Text</button>
+	
+	<button type="button" class="stopz">STOP</button>
+	
+	<br>
+	
+	<button type="button" class="tog">Toggle Show-Hide</button>
+	
+	<br>
+	
+	<p class = "a">
+	<button type="button" class="hide">Hide Text</button>
+	<br>
+	<button type="button" class="show">Show Text</button>
+	</p>
+	
+	<p class = "a">
+	<button type="button" class="OUT">Fade Out</button>
+	<br>
+	<button type="button" class="IN">Fade In</button>
+	</p>
+	
+	
+	<p class = "a">
+	<button type="button" class="UP">Slide Up</button>
+	<br>
+	<button type="button" class="DOWN">Slide Down</button>
+	</p>
+	
+	<p class = "stop">Not loaded yet.</p>
+	
+</body>
+</html>

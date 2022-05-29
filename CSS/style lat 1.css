@@ -1,0 +1,19 @@
+h1
+{
+color:blue;
+font-size:30px;
+}
+p
+{
+color:#1c1259;
+font-size:18px;
+}
+body
+{
+//background-color:#f6d2a5;
+background-image: url("../../../Wallpaper/aaa.jpg");
+background-size:100%;
+background-repeat: repeat-xy;
+background-position:center top;
+background-attachment: fixed;
+}

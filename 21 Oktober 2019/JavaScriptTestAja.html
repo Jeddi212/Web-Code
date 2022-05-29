@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "Jeddi">
+	<title>JS.com</title>
+	<style>
+	p {
+		font-size: 20px;
+		font-family: Comic Sans MS, sans-serif;
+		margin: 0px;
+		padding: 0px;
+	}
+	.right {
+		float: left;
+	}
+	</style>
+</head>
+
+<body>
+	<h2>JavaScript in Body</h2>
+	<p id="demo">Ashiyaap</p>
+
+	<script>
+	document.getElementById("demo").innerHTML = "William Squarepants LEBAYerssss.com";
+	</script>
+	
+<br>
+
+	<h2>What can JS do?</h2>
+	<p id="click">JavaScript can change the style of an HTML Element</p>
+	
+	<button type="button" onclick="document.getElementById('click').style.fontSize='35px'">Click Sini Bosque</button>
+	
+<br><br>
+
+	<div id = "utama">
+		<p>Spongebob Surjana</p>
+		<p>William Tentacles</p>
+		<p>OmMobi Nataniel</p>
+	</div>
+	
+<br>
+
+	<script>
+		var x = document.getElementById("utama");
+		var y = x.getElementsByTagName("p");
+		document.write('SAYA MEMILIH ORANG Pertama YAITU : ' + y[0].innerHTML);
+	</script>
+	
+<br><br>
+
+	<div id = "utama" class="right">
+		<p>Ungu</p> 
+		<p>Biru</p> 
+		<p>Pink</p> 
+	</div>	
+	<button onclick="warnaUngu()">Cobain Neh!!!</button><br><br>
+	<button onclick="warnaBiru()">Cobain Neh!!!</button><br><br>
+	<button onclick="warnaPink()">Cobain Neh!!!</button><br>
+	<script>
+		function warnaUngu() {
+			var i;
+			var y = document.getElementsByTagName("p");
+			for(i=0; i<y.length; i++) {
+				y[i].style.background = "#786fe7";
+			}
+		}
+	</script>
+	<script>
+		function warnaBiru() {
+			var i;
+			var y = document.getElementsByTagName("p");
+			for(i=0; i<y.length; i++) {
+				y[i].style.background = "#7aaae7";
+			}
+		}
+	</script>
+	<script>
+		function warnaPink() {
+			var i;
+			var y = document.getElementsByTagName("p");
+			for(i=0; i<y.length; i++) {
+				y[i].style.background = "#ff8ea2";
+			}
+		}
+	</script>
+
+<br><br>
+
+	<div class="contoh">DIV KE-1</div>
+	<h3 class="contoh">Test Kelas</h3>
+	<p>Test Paragraf ke-3</p>
+	<button onclick="ala_ala()">Disini</button><br>
+	
+	<script>
+		function ala_ala() {
+			// var i;
+			var y = document.getElementsByClassName("contoh");
+			for(var i=0; i<y.length; i++) {
+				y[i].innerHTML="Ganti Kontent";
+			}
+		}
+	</script>
+	
+</body>
+</html>

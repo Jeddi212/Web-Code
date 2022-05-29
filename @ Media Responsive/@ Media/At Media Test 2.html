@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "Jedediah Fanuel">
+	<title>Test @Media</title>
+	<style>
+		/*Portrait & Landscape Smartphone*/
+		@media screen and (min-width: 320px) and (max-width: 480px) {
+			body{
+				background-color: #ff6170;
+			}
+		}
+		/*Portrait Smartphone*/
+		@media screen and (max-width: 320px) {
+			body{
+				background-color: #a2a170;
+			}
+		}
+		/*Portrait Smartphone*/
+		@media screen and (mix-width: 322px) {
+			body{
+				background-color: #32ff70;
+			}
+		}
+		/*Portrait & Landscape Tablet*/
+		@media screen and (min-width: 768px) and (max-width: 1024px) {
+			body{
+				background-color: #c5faaf;
+			}
+		}
+		/*Portrait Tablet*/
+		@media screen and (min-width: 768px) {
+			body{
+				background-color: #566789;
+			}
+		}
+		/*Landscape Tablet*/
+		@media screen and (min-width: 1024px) {
+			body{
+				background-color: #566789;
+			}
+		}
+		/*Desktop*/
+		@media screen and (min-width: 1224px) {
+			body{
+				background-color: #c5556f;
+			}
+		}
+		/*Large Screen*/
+		@media screen and (min-width: 1824px) {
+			body{
+				background-color: #c5556f;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Test @media</h1>
+	<p>The Background output can change in different media</p>
+
+
+
+
+
+</body>
+
+</html>

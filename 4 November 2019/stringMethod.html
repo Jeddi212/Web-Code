@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "Jeddi">
+	<title>JS METHOD</title>
+</head>
+
+<body>
+	<script>
+		var str1 = "It's Okay";
+		var str2 = 'she said "Goodbye"';
+		document.write(str1 + "<br>" + str2);
+		//document.write(str2 + "<br>");
+		
+		//test pre
+		var str2 = 'she said "Goodbye" \n next string';
+		document.write("<pre>" + str2 + "</pre>");
+		
+		//test length
+		document.write(str2.length);
+		
+		//text indexOf
+		var str2 = 'she said "Goodbye" \n she next string';
+		var pos = str2.indexOf("she");
+		document.write("<br>" + pos + "<br>");
+		document.write(str2.lastIndexOf("she"));
+		document.write("<br>" + str2.charAt(5));
+		
+		//concat, gabung string
+		var name1 = ["Dave", "Valen", "Gerry"];
+		var name2 = ["Levin", "Timothy", "Andreas"];
+		var student = name2.concat(name1);
+		document.write("<br>" + student);
+		
+		//match string
+		var str = " The rain in SPAIN  stays mainly in the plain ";
+		var res = str.match(/AIN/g);
+		document.write("<br>" + res);
+		
+		//search
+		var str3 = 'She said "Goodbye" \n she next string';
+		var pos = str3.search("she");
+		document.write("<br>" + pos);
+		var pos1 = str3.search(/she/i); //cuman munculin yang paling pertama di temukan
+		document.write("<br>" + pos1);
+		
+		//replace					//i maksudnya, capital atau engga dianggap sama
+		var result = str3.replace(/she/i, "He");
+		document.write("<br>" + result);
+		
+		//substr
+		document.write("<br>" + str3);
+		
+		// ini munculin dari index ke delapan
+		document.write("<br>" + str3.substr(8));
+		
+		// ini munculin dari index ke 8 sampe 20 karakter
+		document.write("<br>" + str3.substr(7, 20));
+		
+		// ini munculin dari index ke 8 sampe index ke 20
+		document.write("<br>" + str3.substring(8, 20));
+		
+		//number method,banyaknya digit
+		var x = 6.2345;
+		document.write(x.toPrecision() + "<br>");
+		document.write(x.toPrecision(3) + "<br>");
+		document.write(x.toPrecision(2) + "<br>");
+		
+		// banyaknya digit dibelakang koma
+		document.write(x.toFixed(2) + "<br>");
+		document.write(x.toFixed(6) + "<br>");
+		document.write(x.toExponential(6) + "<br>");
+		
+		//array method
+		var fruits = ["Apple", "Manggo", "Banana"];
+		//iterates over array elements
+		for(var i = 0; i < fruits.length; i++){
+			document.write(fruits[i] + "<br>");
+		}
+		
+		//iterates 2
+		for(var fruit of fruits){
+			document.write(fruit + "<br>");
+		}
+		
+		//iterates 3
+		for(var i in fruits){
+			document.write(fruits[i] + "<br>");
+		}
+		
+		fruits.push("Kiwi");
+		document.write("<br>" + fruits + " " + "<br>" + "jumlah buahnya " + fruits.length + "<br>");
+		
+		//nambahin di index ke 2, remove 0
+		fruits.splice(2,0, "Lemon", "Orange");
+		document.write("<br>" + fruits + " " + fruits.length + "<br>");
+		
+		//dari index ke 2, remove 3 buah, trus tambahin juga dari index ke 2
+		var remove = fruits.splice(2,3, "Strawberry", "Pear");
+		document.write("<br>" + fruits + " " + fruits.length + "<br>");
+		
+		fruits.sort();
+		document.write(fruits + "<br>");
+		fruits.reverse()
+		document.write(fruits + "<br>");
+		
+		//ini nambahin dari index ke 0
+		fruits.unshift("Papaya", "Pineapple");
+		document.write(fruits + "<br>");
+		
+	</script>
+
+</body>
+</html>

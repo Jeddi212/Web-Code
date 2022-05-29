@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Outline CSS</title>
+	<style>
+	p{
+		border: 3px solid green;
+		
+	}
+	p.dotted{
+		outline-style: dotted;
+		outline-width: thick;
+	}
+	p.dashed{
+		outline: 5px dashed yellow;
+	}
+	table, th, td{
+		border: 1px solid black;
+		text-align: center;
+	}
+	th{
+		text-align: left;
+		height: 30px;
+		background-color: #08ef92;
+	}
+	th, td{
+		padding: 5px;
+	}
+	table{
+		border-collapse: collapse;
+		width: 80%;
+		margin: auto;
+	}
+	td:hover{
+		background-color: #bb2700;
+	}
+	tr:nth-child(odd){
+		background-color:#9679ca;
+	}
+	ul{
+		width: 300px;
+		list-style-image: url(images/star.png);
+	}
+	li{
+		margin: 17px;
+	}
+	ul.one{
+		list-style-position: inside;
+	}
+	ul.two{
+		list-style-position: outside;
+	}
+	</style>
+</head>
+
+<body>
+<p class="dotted">Dotted Outline</p>
+<p class="dashed">Dashed Outline</p>
+
+<table>
+	<tr>
+		<th>NIM</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+	</tr>
+	<tr>
+		<td>01</td>
+		<td>Zilong</td>
+		<td>bin Zhazk</td>
+		<td>zilong12@mail.command</td>
+	</tr>
+	<tr>
+		<td>02</td>
+		<td>Valir</td>
+		<td>bin Tigreal</td>
+		<td>tigreal12@mail.command</td>
+	</tr>
+	<tr>
+		<td>03</td>
+		<td>Akai</td>
+		<td>bin Aldous</td>
+		<td>akai12@mail.command</td>
+	</tr>
+	<tr>
+		<td>04</td>
+		<td style="font-size:100px"><b>William</b></td>
+		<td style="font-size:100px">bin <b>Lebay</b></td>
+		<td><b>alayers</b>12@mail.command</td>
+	</tr>
+	<tr>
+		<td>05</td>
+		<td>Ruby</td>
+		<td>bin Franco</td>
+		<td>ruby12@mail.command</td>
+	</tr>
+</table>
+
+
+<h3>Test Lists</h3>
+<ul class="one">
+	<li>blablablablablablablablblabla...</li>
+	<li>blablablablablablablablblabla...</li>
+	<li>blablablablablablablablblabla...</li>
+</ul>
+<ul class="two">
+	<li>blablablablablablablablblabla...</li>
+	<li>blablablablablablablablblabla...</li>
+	<li>blablablablablablablablblabla...</li>
+</ul>
+
+</body>
+
+</html>
